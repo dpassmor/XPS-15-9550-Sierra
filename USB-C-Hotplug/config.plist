@@ -48,3 +48,24 @@
                         <string>SSDT-TB.aml</string>
                 </array>
         </dict>
+        <key>KernelAndKextPatches</key>
+        <dict>
+                <key>KextsToPatch</key>
+                <array>
+                        <dict>
+                                <key>Comment</key>
+                                <string>10.12.2 fudge USB 3.1 device ID</string>
+                                <key>Disabled</key>
+                                <false/>
+                                <key>Find</key>
+                                <string>30783135643438303836</string>
+                                <key>InfoPlistPatch</key>
+                                <true/>
+                                <key>Name</key>
+                                <string>AppleUSBXHCIPCI</string>
+                                <key>Replace</key>
+                                <string>30783135623538303836</string>
+                        </dict>
+                </array>
+        </dict>
+
